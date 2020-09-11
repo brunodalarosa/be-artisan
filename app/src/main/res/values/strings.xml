@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Be Artisan</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+
+<!-- Bottom Navigation-->
+    <string name="bottom_nav_craft">Craft</string>
+    <string name="bottom_nav_sell">Sell</string>
+    <string name="bottom_nav_manage">Manage</string>
+
 </resources>

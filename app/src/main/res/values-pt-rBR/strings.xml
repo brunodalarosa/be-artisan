@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Seja Artesão</string>
+    <string name="bottom_nav_craft">Produza</string>
+    <string name="bottom_nav_sell">Venda</string>
+    <string name="bottom_nav_manage">Administre</string>
+</resources>

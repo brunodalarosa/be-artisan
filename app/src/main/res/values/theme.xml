@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.BeArtisan" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!--typography-->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.BeArtisan.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.BeArtisan.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.BeArtisan.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.BeArtisan.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.BeArtisan.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.BeArtisan.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.BeArtisan.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.BeArtisan.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.BeArtisan.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.BeArtisan.Body2</item>
+        <item name="textAppearanceButton">@style/TextAppearance.BeArtisan.Button</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.BeArtisan.Caption</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.BeArtisan.Overline</item>
+
+    </style>
+
+    <style name="BeArtisan" parent="Base.BeArtisan" />
+
+    <style name="BeArtisan.Default">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>
