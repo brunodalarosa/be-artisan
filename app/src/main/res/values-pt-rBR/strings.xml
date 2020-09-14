@@ -4,4 +4,5 @@
     <string name="bottom_nav_craft">Produza</string>
     <string name="bottom_nav_sell">Venda</string>
     <string name="bottom_nav_manage">Administre</string>
+    <string name="bottom_nav_user">Usuário</string>
 </resources>
