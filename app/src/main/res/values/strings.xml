@@ -6,5 +6,12 @@
     <string name="bottom_nav_sell">Sell</string>
     <string name="bottom_nav_manage">Manage</string>
     <string name="bottom_nav_user">User</string>
+    <string name="new_product_title">register new product</string>
+    <string name="product_name_hint">name</string>
+    <string name="product_description_hint">description</string>
+    <string name="product_price_title">price</string>
+    <string name="product_stock_title">stock</string>
+    <string name="general_save">save</string>
+    <string name="new_product_generic_error">there\'s something wrong with this new product :(</string>
 
 </resources>

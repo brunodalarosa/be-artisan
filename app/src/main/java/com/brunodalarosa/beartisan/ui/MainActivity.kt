@@ -24,9 +24,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         val binding: ActivityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        binding.lifecycleOwner = this
 
         val navController = findNavController(R.id.nav_host_fragment)
 
         binding.navView.setupWithNavController(navController)
+        binding.executePendingBindings()
     }
 }

@@ -6,8 +6,14 @@ import androidx.recyclerview.widget.RecyclerView
 import com.brunodalarosa.beartisan.data.Product
 import com.brunodalarosa.beartisan.databinding.SimpleProductRvItemBinding
 
-class ProductsAdapter internal constructor(private val items: List<Product>) :
-    RecyclerView.Adapter<ProductsAdapter.ProductViewHolder>() {
+class ProductsAdapter() : RecyclerView.Adapter<ProductsAdapter.ProductViewHolder>() {
+
+    private var items: List<Product> = listOf()
+
+    public fun setProducts(products: List<Product>) {
+        items = products
+        notifyDataSetChanged()
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductViewHolder {
         val inflater = LayoutInflater.from(parent.context)

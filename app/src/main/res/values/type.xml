@@ -4,18 +4,21 @@
     <style name="TextAppearance.BeArtisan.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
         <item name="fontFamily">@font/baloo_bold</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:includeFontPadding">false</item>
     </style>
 
     <!--60sp-->
     <style name="TextAppearance.BeArtisan.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
         <item name="fontFamily">@font/baloo_bold</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:includeFontPadding">false</item>
     </style>
 
     <!--48sp-->
     <style name="TextAppearance.BeArtisan.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
         <item name="fontFamily">@font/baloo_bold</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:includeFontPadding">false</item>
     </style>
 
     <!--34sp-->
@@ -24,57 +27,67 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">?android:attr/textColorPrimary</item>
         <item name="lineHeight">40sp</item>
+        <item name="android:includeFontPadding">false</item>
     </style>
 
     <!--24sp-->
     <style name="TextAppearance.BeArtisan.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
         <item name="fontFamily">@font/baloo_bold</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:includeFontPadding">false</item>
     </style>
 
     <!--20sp-->
     <style name="TextAppearance.BeArtisan.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
         <item name="fontFamily">@font/baloo_medium</item>
         <item name="lineHeight">28sp</item>
+        <item name="android:includeFontPadding">false</item>
     </style>
 
     <!--16sp-->
     <style name="TextAppearance.BeArtisan.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
         <item name="fontFamily">@font/baloo_medium</item>
         <item name="lineHeight">22sp</item>
+        <item name="android:includeFontPadding">false</item>
     </style>
 
     <!--14sp-->
     <style name="TextAppearance.BeArtisan.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
         <item name="fontFamily">@font/baloo_medium</item>
+        <item name="android:includeFontPadding">false</item>
     </style>
 
     <!--16sp-->
     <style name="TextAppearance.BeArtisan.Body1" parent="TextAppearance.MaterialComponents.Body1">
         <item name="fontFamily">@font/baloo</item>
         <item name="lineHeight">28sp</item>
+        <item name="android:includeFontPadding">false</item>
     </style>
 
     <!--14sp-->
     <style name="TextAppearance.BeArtisan.Body2" parent="TextAppearance.MaterialComponents.Body2">
         <item name="fontFamily">@font/baloo</item>
         <item name="lineHeight">16sp</item>
+        <item name="android:includeFontPadding">false</item>
     </style>
 
     <!--14sp-->
     <style name="TextAppearance.BeArtisan.Button" parent="TextAppearance.MaterialComponents.Button">
         <item name="fontFamily">@font/baloo_bold</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:includeFontPadding">false</item>
     </style>
 
     <!--12sp-->
     <style name="TextAppearance.BeArtisan.Caption" parent="TextAppearance.MaterialComponents.Caption">
         <item name="fontFamily">@font/baloo</item>
+        <item name="android:includeFontPadding">false</item>
     </style>
 
     <!--10sp-->
     <style name="TextAppearance.BeArtisan.Overline" parent="TextAppearance.MaterialComponents.Overline">
         <item name="fontFamily">@font/baloo</item>
+        <item name="android:includeFontPadding">false</item>
     </style>
 
 </resources>

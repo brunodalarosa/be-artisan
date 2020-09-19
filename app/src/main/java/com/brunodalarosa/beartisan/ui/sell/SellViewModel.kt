@@ -21,10 +21,6 @@ class SellViewModel @ViewModelInject constructor(private val productRepository: 
 
     val allProducts: LiveData<List<Product>> = productRepository.allProducts
 
-    fun insertProduct(product: Product) = viewModelScope.launch(Dispatchers.IO) {
-        productRepository.insert(product)
-    }
-
     // Test methods
     fun PopulateProductTableWithTestData() = viewModelScope.launch(Dispatchers.IO) {
         productRepository.populateDatabaseWithTestData()

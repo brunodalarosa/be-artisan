@@ -1,5 +1,6 @@
 package com.brunodalarosa.beartisan.ui.sell
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -12,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.brunodalarosa.beartisan.R
 import com.brunodalarosa.beartisan.databinding.FragmentSellBinding
 import com.brunodalarosa.beartisan.ui.adapters.ProductsAdapter
+import com.brunodalarosa.beartisan.ui.product.NewProductActivity
 import com.brunodalarosa.beartisan.util.Constants
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -32,11 +34,21 @@ class SellFragment : Fragment() {
         binding.lifecycleOwner = this
         binding.viewmodel = sellViewModel
 
+        binding.fabSell.setOnClickListener {
+            val intent = Intent(context, NewProductActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.executePendingBindings()
+
         if (Constants.debug) {
             sellViewModel.PopulateProductTableWithTestData()
         }
 
-        val adapter = ProductsAdapter(listOf())
+        val adapter = ProductsAdapter()
+
+        sellViewModel.allProducts.observe(viewLifecycleOwner, { products -> products?.let { adapter.setProducts(it) } })
+
         binding.productsRv.adapter = adapter
         binding.productsRv.layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL, false)
 

@@ -6,4 +6,7 @@
     <dimen name="padding_l">16dp</dimen>
     <dimen name="margin_m">16dp</dimen>
     <dimen name="bottom_nav_height">56dp</dimen>
+
+    <dimen name="input_desc_min_height">70dp</dimen>
+    <dimen name="input_price_min_width">100dp</dimen>
 </resources>
