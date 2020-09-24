@@ -1,6 +1,5 @@
 package com.brunodalarosa.beartisan.ui.sell
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -14,7 +13,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.brunodalarosa.beartisan.R
 import com.brunodalarosa.beartisan.databinding.FragmentSellBinding
 import com.brunodalarosa.beartisan.ui.adapters.ProductsAdapter
-import com.brunodalarosa.beartisan.ui.product.NewProductActivity
 import com.brunodalarosa.beartisan.util.Constants
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -35,15 +33,11 @@ class SellFragment : Fragment() {
         binding.lifecycleOwner = this
         binding.viewmodel = sellViewModel
 
-        binding.fabSell.setOnClickListener {
-            findNavController().navigate(R.id.action_navigation_sell_to_navigation_new_product)
-        }
+        binding.fabSell.setOnClickListener { findNavController().navigate(R.id.action_navigation_sell_to_navigation_new_product) }
 
         binding.executePendingBindings()
 
-        if (Constants.debug) {
-            sellViewModel.PopulateProductTableWithTestData()
-        }
+        if (Constants.debug) sellViewModel.PopulateProductTableWithTestData()
 
         val adapter = ProductsAdapter()
 

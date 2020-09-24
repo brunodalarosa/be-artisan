@@ -18,6 +18,9 @@ class ProductRepository @Inject constructor(appDatabase: AppDatabase) {
 
     // Testing methods
     suspend fun populateDatabaseWithTestData() {
+        if (productDao.getTotalCount() > 0)
+            return
+
         val BombomMorango = Product("Bombom de morango", "bem gostoso", 3.5, 5)
         val BoloCenoura = Product("Bolo de cenoura", "com muita cobertura de chocolate", 2.5, 5)
         val Cafe = Product("Cafe", "Moído na hora!", 2.0, 10)
