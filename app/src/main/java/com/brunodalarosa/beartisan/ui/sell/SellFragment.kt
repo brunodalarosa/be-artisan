@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.brunodalarosa.beartisan.R
@@ -35,8 +36,7 @@ class SellFragment : Fragment() {
         binding.viewmodel = sellViewModel
 
         binding.fabSell.setOnClickListener {
-            val intent = Intent(context, NewProductActivity::class.java)
-            startActivity(intent)
+            findNavController().navigate(R.id.action_navigation_sell_to_navigation_new_product)
         }
 
         binding.executePendingBindings()

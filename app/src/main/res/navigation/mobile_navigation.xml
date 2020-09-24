@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_craft">
+    app:startDestination="@+id/navigation_sell">
 
     <fragment
         android:id="@+id/navigation_craft"
@@ -15,7 +15,11 @@
         android:id="@+id/navigation_sell"
         android:name="com.brunodalarosa.beartisan.ui.sell.SellFragment"
         android:label="@string/bottom_nav_sell"
-        tools:layout="@layout/fragment_sell" />
+        tools:layout="@layout/fragment_sell">
+        <action
+            android:id="@+id/action_navigation_sell_to_navigation_new_product"
+            app:destination="@id/navigation_new_product" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_manage"
@@ -28,4 +32,10 @@
         android:name="com.brunodalarosa.beartisan.ui.user.UserFragment"
         android:label="@string/bottom_nav_user"
         tools:layout="@layout/fragment_user" />
+
+    <activity
+        android:id="@+id/navigation_new_product"
+        android:name="com.brunodalarosa.beartisan.ui.product.NewProductActivity"
+        android:label="@string/new_product_activity"
+        tools:layout="@layout/activity_new_product" />
 </navigation>
