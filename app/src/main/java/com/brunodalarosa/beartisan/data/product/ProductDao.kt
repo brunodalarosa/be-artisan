@@ -1,4 +1,4 @@
-package com.brunodalarosa.beartisan.data
+package com.brunodalarosa.beartisan.data.product
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao

@@ -5,7 +5,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.brunodalarosa.beartisan.data.Product
+import com.brunodalarosa.beartisan.data.product.Product
 import com.brunodalarosa.beartisan.repo.ProductRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

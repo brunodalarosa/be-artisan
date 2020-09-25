@@ -4,7 +4,7 @@
     <data>
         <variable
             name="product"
-            type="com.brunodalarosa.beartisan.data.Product" />
+            type="com.brunodalarosa.beartisan.data.product.Product" />
     </data>
 
     <LinearLayout

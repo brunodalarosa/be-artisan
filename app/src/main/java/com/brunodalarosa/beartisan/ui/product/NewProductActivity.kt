@@ -5,7 +5,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.brunodalarosa.beartisan.R
-import com.brunodalarosa.beartisan.data.Product
+import com.brunodalarosa.beartisan.data.product.Product
 import com.brunodalarosa.beartisan.databinding.ActivityNewProductBinding
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint

@@ -3,7 +3,7 @@ package com.brunodalarosa.beartisan.ui.adapters
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.brunodalarosa.beartisan.data.Product
+import com.brunodalarosa.beartisan.data.product.Product
 import com.brunodalarosa.beartisan.databinding.SimpleProductRvItemBinding
 
 class ProductsAdapter() : RecyclerView.Adapter<ProductsAdapter.ProductViewHolder>() {
